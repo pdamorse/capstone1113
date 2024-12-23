@@ -1,0 +1,1 @@
+source /home/pablom/Project-Capstone/capstone1113/Venv/bin/activate

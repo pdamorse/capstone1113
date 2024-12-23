@@ -1,1 +1,5 @@
-Flask==2.3.2
+pip install Flask
+pip install SQLAlchemy
+pip install Flask-SQLAlchemy
+pip install Flask-WTF
+
