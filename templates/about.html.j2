@@ -1,6 +1,7 @@
-<head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+{% extends "style.html.j2" %}
+{% block title %}About Us {% endblock %}
+
+{% block content %}
 
 <body>
     <div class="App">
@@ -16,4 +17,4 @@
     </div>
 </body>
 
-</html>
+{% endblock %}
