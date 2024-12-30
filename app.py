@@ -10,6 +10,16 @@ def homepage():
 def about_us():
     return render_template("about.html.j2", title="About Us")
 
-@app.route("/Login")
+@app.route("/Login", methods=['GET', 'POST'])
 def login_page():
-    return render_template("login.html.j2", title="Login")
+    if request.method == 'GET':
+        return render_template("login.html.j2", title="Login")
+    elif request.method == 'POST':
+        return ""
+
+@app.route("/Profile")
+def profile():
+    return render_template("profile.html.j2", title="Profile")
+
+
+
